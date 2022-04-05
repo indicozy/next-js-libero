@@ -71,6 +71,10 @@
   @apply not-italic;
 }
 
+.content blockquote {
+  @apply bg-gray-800;
+}
+
 .content audio {
   @apply w-full;
 }

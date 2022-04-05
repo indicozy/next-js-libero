@@ -6,6 +6,7 @@ import Intro from '../components/intro'
 import Layout from '../components/layout'
 import { getAllPostsForHome } from '../lib/api'
 import { CMS_NAME } from '../lib/constants'
+import PostTitle from '../components/post-title'
 
 export default function Index({ allPosts: { edges }, preview }) {
   const heroPost = edges[0]?.node
@@ -18,7 +19,7 @@ export default function Index({ allPosts: { edges }, preview }) {
           <title>Next.js Blog Example with {CMS_NAME}</title>
         </Head>
         <Container>
-          <Intro />
+          <PostTitle>Про Linux и Open-Source</PostTitle>
           {heroPost && (
             <HeroPost
               title={heroPost.title}
