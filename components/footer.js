@@ -1,5 +1,6 @@
-import Container from './container'
-import { EXAMPLE_PATH } from '../lib/constants'
+import Container from "./container";
+import { EXAMPLE_PATH } from "../lib/constants";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -10,21 +11,21 @@ export default function Footer() {
             Следите за последними событиями в Open-Source.
           </h3>
           <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
-            <a
-              href="https://nextjs.org/docs/basic-features/pages"
-              className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white dark:bg-white hover:dark:bg-black dark:text-black hover:dark:text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
-            >
-              Перейти на Youtube
-            </a>
-            <a
+            <Link href="https://nextjs.org/docs/basic-features/pages">
+              <a className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white dark:bg-white hover:dark:bg-black dark:text-black hover:dark:text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0">
+                Перейти на Youtube
+              </a>
+            </Link>
+            <Link
               href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-              className="mx-3 font-bold hover:underline"
             >
-              Обсуждайте в Telegram
-            </a>
+              <a className="mx-3 font-bold hover:underline">
+                Обсуждайте в Telegram
+              </a>
+            </Link>
           </div>
         </div>
       </Container>
     </footer>
-  )
+  );
 }

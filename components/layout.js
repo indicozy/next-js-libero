@@ -1,10 +1,10 @@
-import Alert from '../components/alert'
-import Footer from '../components/footer'
-import Meta from '../components/meta'
-import Header from '../components/header'
+import Alert from "../components/alert";
+import Footer from "../components/footer";
+import Meta from "../components/meta";
+import Header from "../components/header";
 
 export default function Layout({ preview, children }) {
-        // <Alert preview={preview} />
+  // <Alert preview={preview} />
   return (
     <>
       <Header />
@@ -14,5 +14,5 @@ export default function Layout({ preview, children }) {
       </div>
       <Footer />
     </>
-  )
+  );
 }
