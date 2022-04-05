@@ -1,5 +1,5 @@
 module.exports = {
   images: {
-    domains: ["liberoproject.kz", "secure.gravatar.com"],
+    domains: ["wp.liberoproject.kz", "liberoproject.kz", "secure.gravatar.com"],
   },
 };
