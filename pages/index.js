@@ -15,7 +15,7 @@ export default function Index({ allPosts: { edges }, preview }) {
     <>
       <Layout preview={preview}>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>Libero Project - О Linux и Свободном ПО</title>
         </Head>
         <Container>
           <PostTitle>Про Linux и Open-Source</PostTitle>
