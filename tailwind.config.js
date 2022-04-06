@@ -34,7 +34,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Sans", ...defaultTheme.fontFamily.sans],
-        raleway: ["Dela Gothic One", ...defaultTheme.fontFamily.sans],
+        raleway: ["Raleway", ...defaultTheme.fontFamily.sans],
         cantarell: ["Cantarell", ...defaultTheme.fontFamily.sans],
       },
       boxShadow: {
