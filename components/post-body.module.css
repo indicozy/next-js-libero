@@ -71,6 +71,11 @@
   @apply not-italic;
 }
 
+.content iframe {
+  @apply w-full;
+  @apply aspect-video;
+}
+
 .content blockquote {
   @apply bg-gray-800;
 }
